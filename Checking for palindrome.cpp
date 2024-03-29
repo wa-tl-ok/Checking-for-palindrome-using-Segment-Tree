@@ -93,9 +93,9 @@ void solve() {
 		s.append("a");
 	}
 
-	Step.resize(1e7);
+	Step.resize(2e6);
 	Step[0] = 1;
-	for (int i = 1; i < 1e7; ++i) {
+	for (int i = 1; i < 2e6; ++i) {
 		Step[i] = (Step[i - 1] * 31) % mod;
 	}
 
