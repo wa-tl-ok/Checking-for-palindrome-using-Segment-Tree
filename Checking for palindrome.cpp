@@ -1,4 +1,4 @@
-﻿#include <iostream>
+#include <iostream>
 #include <vector>
 #include <string>
 
@@ -78,8 +78,8 @@ private:
 	node merge(node a, node b) {
 		node new_node;
 		new_node.size_l_r = a.size_l_r + b.size_l_r;
-		new_node.hash = (a.hash * Step[new_node.size_l_r - a.size_l_r] + b.hash) % mod;
-		new_node.reverse_hash = (b.reverse_hash * Step[new_node.size_l_r - b.size_l_r] + a.reverse_hash) % mod;
+		new_node.hash = (a.hash + b.hash * Step[a.size_l_r]) % mod;
+		new_node.reverse_hash = (b.reverse_hash + a.reverse_hash * Step[b.size_l_r]) % mod;
 		return new_node;
 	}
 };
