@@ -1,6 +1,22 @@
 #include <iostream>
+#include <algorithm>
+#include <cmath>
 #include <vector>
+#include <queue>
+#include <deque>
+#include <array>
+#include <list>
+#include <stack>
+#include <set>
+#include <unordered_set>
+#include <map>
+#include <unordered_map>
 #include <string>
+#include <cstring>
+#include <random>
+#include <bitset>
+#include <functional>
+#include <random>
 
 #define ord(a) (ll) (a);
 
